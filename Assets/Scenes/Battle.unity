@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c96028fbf32a0a4ebfb8941849abf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  _bulletPrefab: {fileID: 3786996608681887532, guid: 3fe54d18853c74a4aa4947b2f9dbc2c3, type: 3}
+  _bulletPool: {fileID: 1116447607}
   _cooldown: 0.2
 --- !u!1 &153659678
 GameObject:
@@ -2237,6 +2237,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Blinking
   _blinkingTime: 0.1
   _playOnAwake: 0
+--- !u!1 &1116447606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116447608}
+  - component: {fileID: 1116447607}
+  m_Layer: 0
+  m_Name: BulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1116447607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116447606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c15f4cdb8443c04eac5b2e2381bb532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  _bulletPrefab: {fileID: 2913567467528112377, guid: 3fe54d18853c74a4aa4947b2f9dbc2c3, type: 3}
+--- !u!4 &1116447608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116447606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231275078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,7 +2725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c96028fbf32a0a4ebfb8941849abf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  _bulletPrefab: {fileID: 3786996608681887532, guid: 3fe54d18853c74a4aa4947b2f9dbc2c3, type: 3}
+  _bulletPool: {fileID: 1116447607}
   _cooldown: 0.2
 --- !u!1 &1380892214
 GameObject:
@@ -3716,7 +3761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c96028fbf32a0a4ebfb8941849abf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  _bulletPrefab: {fileID: 3786996608681887532, guid: 3fe54d18853c74a4aa4947b2f9dbc2c3, type: 3}
+  _bulletPool: {fileID: 1116447607}
   _cooldown: 0.2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -3731,3 +3776,4 @@ SceneRoots:
   - {fileID: 764581158}
   - {fileID: 1254372282}
   - {fileID: 775265029}
+  - {fileID: 1116447608}

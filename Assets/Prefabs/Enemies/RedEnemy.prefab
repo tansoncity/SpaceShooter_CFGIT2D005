@@ -394,6 +394,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Explosive
   _explosionPrefab: {fileID: 4881927323851722619, guid: 36f5bd2fed83b3c4a8c1714211b1105f, type: 3}
+  _destroyOnExploded: 1
+  OnExploded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!50 &6381764582648431086
 Rigidbody2D:
   serializedVersion: 5

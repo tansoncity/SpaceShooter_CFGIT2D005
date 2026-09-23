@@ -198,6 +198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoDestroy
   _lifeTime: 4
+  OnDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1565497864752862292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Explosive
   _explosionPrefab: {fileID: 7768117655436670473, guid: 397fb7d744f8a3b48b10be8e9aadd573, type: 3}
+  OnExploded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &2323351148258728516
 AudioSource:
   m_ObjectHideFlags: 0

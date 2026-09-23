@@ -130,6 +130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoDestroy
   _lifeTime: 0.7
+  _destroyOnTimeout: 1
+  OnTimeout:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &5067952616975054876
 AudioSource:
   m_ObjectHideFlags: 0

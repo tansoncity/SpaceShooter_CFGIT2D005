@@ -130,6 +130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   _lifeTime: 0.9
+  _destroyOnTimeout: 1
+  OnTimeout:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &7702178753613899474
 AudioSource:
   m_ObjectHideFlags: 0

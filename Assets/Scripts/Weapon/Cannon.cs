@@ -2,8 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Cannon : MonoBehaviour
-{   
-    [SerializeField] private GameObject _bulletPrefab;
+{
+    [SerializeField] private BulletPool _bulletPool;
     [SerializeField] private float _cooldown;
 
     private InputAction _shootAction;
@@ -26,5 +26,8 @@ public class Cannon : MonoBehaviour
     }
 
     private void Shoot()
-        => Instantiate(_bulletPrefab, transform.position, transform.rotation);
+    {
+        var bullet = _bulletPool.Get();
+        bullet.transform.SetPositionAndRotation(transform.position, transform.rotation);
+    }
 }
